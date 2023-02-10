@@ -19,8 +19,8 @@ void save_protocol_data(const std::string &protocol_file, const std::string &dat
     }
     else
     {
-        throw InvalidParametrEcxeption("Problem with save data. File [" + protocol_file + 
-        "] can\'t be open. " + "data [" + data + "];");
+        throw InvalidParametrEcxeption("Problem with save data. File [" + protocol_file +
+                                       "] can\'t be open. " + "data [" + data + "];");
     }
 }
 

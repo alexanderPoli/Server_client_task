@@ -17,14 +17,14 @@ long int time_cost(const std::string time)
     return mktime(&tm);
 }
 
-void get_substing(std::string line, const std::string &separator,std::vector<std::string> &substrings)
+void get_substing(std::string line, const std::string &separator, std::vector<std::string> &substrings)
 {
     substrings.clear();
     std::size_t start_pos = 0;
     std::size_t pos = 0;
-   
+
     std::size_t sep_length = separator.size();
-    while((pos = line.find(separator, start_pos)) && pos != std::string::npos)
+    while ((pos = line.find(separator, start_pos)) && pos != std::string::npos)
     {
         substrings.push_back(line.substr(start_pos, pos - start_pos));
         start_pos = pos + sep_length;

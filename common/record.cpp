@@ -46,5 +46,5 @@ std::string Record::get_quotient_str() const
 
 std::string Record::get_str() const
 {
-    return get_time_str()+";"+ std::to_string(first) +";"+ std::to_string(second) +";";
+    return get_time_str() + ";" + std::to_string(first) + ";" + std::to_string(second) + ";";
 }
